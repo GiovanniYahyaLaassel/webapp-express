@@ -1,5 +1,4 @@
 //importo la connesione dal database
-const { json } = require('express');
 const connection = require('../data/db'); 
 
 // funzione per ottenre la lista di tutti i film 
@@ -20,4 +19,6 @@ const index = (req, res) => {
     });
 };
 
-module.exports = index
+module.exports = {
+    index
+};
